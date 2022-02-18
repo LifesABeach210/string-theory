@@ -180,7 +180,7 @@ console.log(email("john","Rothwell"));*/
                                                                 reverse('colin') -> 'niloc'
                                                                 reverse('mesuara') -> 'arausem'*/
 
-    function reverse(string) {
+   /* function reverse(string) {
         let str = ""
     
         for (let i = string.length -1; i >=0; i--) {
@@ -191,10 +191,31 @@ console.log(email("john","Rothwell"));*/
     
     }
     console.log(reverse("hello"));
+    */                                                          /*
+                                                                returns only the vowels from a word
+                                                                Examples:
+                                                                onlyVowels('Colin Jaffe') -> 'oiae'
+                                                                onlyVowels('quickly') -> 'ui'
+                                                                onlyVowels('Anthony DeRosa') -> 'Aoeoa'*/
+      
+
+    function vowles(string) {
+    let v1  = ["a","e","y","i","o","u"];        
+ 
+    let str = "";
+    for (let i = 0; i < string.length; i++) {
+
+    if (string[i]==="a"|| string[i] === "e"||string[i]==="y"||string[i]==="i"||string[i]==="o"||string[i]==="u") {
+           
+      str = str += string[i]
+
+    }
+
     
-    /*function reverse(s) {
-        var o = '';
-        for (var i = s.length - 1; i >= 0; i--)
-          o += s[i];
-        return o;
-      }*/
+    
+
+}                                        
+   return str                                                           
+    }
+
+    console.log(vowles("hello my name is dan"));
